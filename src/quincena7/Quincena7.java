@@ -37,14 +37,19 @@ public class Quincena7 { // Clase principal, donde contiene todo el codigo para 
         Scanner tec = new Scanner(System.in); 
         
         //Declaramos la variable anyo
-        int anyo;      
+        int anyo;
+        
         //Establecemos el año actual, mediante una pregunta al usuario
         System.out.println("Introduce el año actual: ");
-        anyo = teclado.nextInt();     
+        anyo = teclado.nextInt();
+        
         //Declaramos las variables para los distintos resultados que obtendremos
-        int resultado1, resultado2, resultado3;         
+        int resultado1, resultado2, resultado3;
+              
+     
+        
        //* Creamos el constructor de la primera persona *//
-   
+        
         persona1 = new Persona("Pepa", "Garcia Navarro", "44879652L", 21);
         
         resultado1 = persona1.dameAnyoNacimiento(anyo);
@@ -56,10 +61,9 @@ public class Quincena7 { // Clase principal, donde contiene todo el codigo para 
         
        /* Creamos el constructor de la segunda persona */
         
-        persona2 = new Persona("Lumilda Maria", "Perez Gimenez", "21979552WL", 42);
+        persona2 = new Persona("Lumilda Maria", "Perez Gimenez", "21979552WL", 41);
         
         resultado2 = persona2.dameAnyoNacimiento(anyo);
-        
         
         //Mostraremos en pantalla la ejecución del constructor 
          System.out.println("La persona " + persona2.getNombre() + " " + persona2.getApellidos() + ", con DNI " + persona2.getDni() + " ha nacido en el año " + resultado2);
